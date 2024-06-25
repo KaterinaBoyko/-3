@@ -1,0 +1,17 @@
+price_range = data['price'].min(), data['price'].max()
+print(price_range)
+mean_living_space_ratio = (data['sqft_living'] / data['sqft_lot']).mean()
+print(mean_living_space_ratio)
+
+Средняя доля жилой площади: примерно 0.19 (19%)
+
+
+floors_count = data['floors'].value_counts()
+print(floors_count)
+condition_distribution = data['condition'].value_counts()
+print(condition_distribution)
+oldest_year_built = data['yr_built'].min()
+newest_year_built = data['yr_built'].max()
+print(oldest_year_built, newest_year_built)
+
+Большинство домов находятся в хорошем или отличном состоянии
